@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6ADF8E41C55AFBBB7529F5D737640F3227669046",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "58730C8F9D0AF6EA48EE711371C5AAE5A5AA68E2" : 0,
+    "6ADF8E41C55AFBBB7529F5D737640F3227669046" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EB95F53C-407F-48A0-9C6E-9573652295E2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "58730C8F9D0AF6EA48EE711371C5AAE5A5AA68E2" : "",
+    "6ADF8E41C55AFBBB7529F5D737640F3227669046" : "BasiciOSApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BasiciOSApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BasiciOSApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/izhang1\/campuslanguageconnection.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "58730C8F9D0AF6EA48EE711371C5AAE5A5AA68E2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/izhang1\/basiciosapp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6ADF8E41C55AFBBB7529F5D737640F3227669046"
+    }
+  ]
+}

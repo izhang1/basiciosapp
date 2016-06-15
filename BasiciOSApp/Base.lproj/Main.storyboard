@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -33,8 +34,11 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAA-w1-vKw">
-                                        <rect key="frame" x="0.0" y="75" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="75" width="151" height="30"/>
+                                        <state key="normal" title="Set Default Label Text"/>
+                                        <connections>
+                                            <action selector="setDefaultLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CzM-Ab-QZg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -42,18 +46,41 @@
                                     <constraint firstItem="3ci-Mq-fQF" firstAttribute="leading" secondItem="KYz-Jv-l7B" secondAttribute="leading" id="WGx-Mw-aTz"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="fVg-0S-raI">
+                                <rect key="frame" x="20" y="141" width="320" height="320"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fVg-0S-raI" secondAttribute="height" multiplier="1:1" id="Xc9-PS-W2w"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="KYz-Jv-l7B" secondAttribute="trailing" id="Dz8-A3-IUD"/>
+                            <constraint firstItem="fVg-0S-raI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YZY-3L-ss5"/>
                             <constraint firstItem="KYz-Jv-l7B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kdn-Mp-nfb"/>
                             <constraint firstItem="KYz-Jv-l7B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="nQf-rR-bBZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fVg-0S-raI" secondAttribute="trailing" id="xY6-mx-Paz"/>
+                            <constraint firstItem="fVg-0S-raI" firstAttribute="top" secondItem="KYz-Jv-l7B" secondAttribute="bottom" constant="8" id="yyu-OE-iU4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="1Mq-ip-1Xq" id="xSo-L2-ZdE"/>
+                        <outlet property="nameTextField" destination="3ci-Mq-fQF" id="vBS-kp-vX3"/>
+                        <outlet property="photoImageview" destination="fVg-0S-raI" id="WL0-VP-XGR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QPq-UK-H5Q">
+                    <connections>
+                        <action selector="selectImageFromLibrary:" destination="BYZ-38-t0r" id="S2G-C7-JOJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="305" y="369"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="540" height="540"/>
+    </resources>
 </document>
