@@ -63,6 +63,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     // MARK: Actions
 
     @IBAction func selectImageFromLibrary(sender: UITapGestureRecognizer) {
+        
+        print("Tap Gesture Initated")
+        
         // Hide the keyboard.
         nameTextField.resignFirstResponder()
         
@@ -80,6 +83,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
 
     @IBAction func setDefaultLabel(sender: UIButton) {
+        
+        print("Set Default Text")
+        
         mealNameLabel.text = "Default Text";
     }
 }
